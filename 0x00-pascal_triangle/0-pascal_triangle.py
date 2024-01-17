@@ -2,13 +2,15 @@
 """
 0-pascal_triangle
 """
+
+
 def pascal_triangle(n):
     """
     Returns a list of integers representing the Pascal's triangle
     """
     if n <= 0:
         return []
-    
+
     PTriangle = [[1]]
 
     for i in range(1, n):
