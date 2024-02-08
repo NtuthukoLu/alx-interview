@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-""" This function iterates through each cell in the grid. For every land cell (with a value of 1),
- it adds 4 to the perimeter (representing the initial assumption of the land being surrounded by water). 
+"""
+This function iterates through each cell in the grid.
+For every land cell (with a value of 1),
+it adds 4 to the perimeter (representing the initial assumption
+of the land being surrounded by water).
 """
 
 
