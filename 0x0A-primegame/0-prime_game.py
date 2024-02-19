@@ -1,6 +1,14 @@
 #!/usr/bin/python3
+""" 
+the prime game module
+"""
+
 
 def isWinner(x, nums):
+    """
+    This implementation directly determines the winner based on 
+    whether n is even or odd, without the need for simulating the game
+    """
     maria_wins = 0
     ben_wins = 0
     
