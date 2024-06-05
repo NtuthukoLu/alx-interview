@@ -3,18 +3,19 @@
 
 
 def canUnlockAll(boxes):
-    """ Set to keep track of visited boxes
-        and stack to perform DFS
-    """
-    visited = set()
-    stack = [0]
 
-    while stack:
-        current_box = stack.pop()
-        visited.add(current_box)
+    if (type(boxes) is not list):
+        return False
 
-        for key in boxes[current_box]:
-            if key not in visited and key < len(boxes):
-                stack.append(key)
+    if (len(boxes) == 0):
+        return False
 
-    return len(visited) == len(boxes)
+    keys = [0]
+    for i in keys:
+        for j in boxes[i]:
+            if j not in keys and j != i and j < len(boxes) and j != 0:
+                keys.append(j)
+    if len(keys) == len(boxes):
+        return True
+    else:
+        return False
